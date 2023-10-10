@@ -5,4 +5,6 @@ CREATE TABLE utenti (
 create table  caseificio (
 	Codcaseificio int PRIMARY KEY 
 	Nome  varchar (50) NOT NULL
+	NomeTitolare varchar(50) NOT NULL
+	Indirizzo varchar(100) NOT NULL
 );
