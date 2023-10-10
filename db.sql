@@ -7,4 +7,7 @@ create table  caseificio (
 	Nome  varchar (50) NOT NULL
 	NomeTitolare varchar(50) NOT NULL
 	Indirizzo varchar(100) NOT NULL
+	Citta varchar(50) NOT NULL
+	CAP int NOT NULL
+	Provincia varchar(50) NOT NULL
 );
