@@ -11,5 +11,5 @@ create table  caseificio (
 	CAP int NOT NULL,
 	Provincia varchar(50) NOT NULL,
 	Latitudine int not null,
-	Longitudine int not null
+	Longitudine int NOT NULL
 );
