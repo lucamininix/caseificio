@@ -1,4 +1,27 @@
-CREATE TABLE Forma(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE forma(
     CodForma int PRIMARY KEY,
     Stagionatura varchar(30) NOT NULL,
     Scelta varchar(20) NOT NULL,
@@ -6,6 +29,6 @@ CREATE TABLE Forma(
     Data date NOT NULL,
     CodCas int,
     CF int(16),
-    FOREIGN KEY (CodCas) REFERENCES Caseificio(CodCas),
-    FOREIGN KEY (CF) REFERENCES Cliente(CF)
+    FOREIGN KEY (CodCas) REFERENCES caseificio(CodCas),
+    FOREIGN KEY (CF) REFERENCES cliente(CF)
 );
