@@ -2,7 +2,7 @@ CREATE TABLE utenti (
 	id int PRIMARY KEY
 );
 
-create table  caseificio (
+CREATE TABLE caseificio (
 	Codcaseificio int PRIMARY KEY,
 	Nome  varchar (50) NOT NULL,
 	NomeTitolare varchar(50) NOT NULL,
@@ -10,6 +10,6 @@ create table  caseificio (
 	Citta varchar(50) NOT NULL,
 	CAP int NOT NULL,
 	Provincia varchar(50) NOT NULL,
-	Latitudine int not null,
+	Latitudine int NOT NULL,
 	Longitudine int NOT NULL
 );
