@@ -3,7 +3,7 @@ CREATE TABLE utenti (
 );
 
 CREATE TABLE caseificio (
-	Codcaseificio int PRIMARY KEY,
+	CodCaseificio int PRIMARY KEY,
 	Nome  varchar (50) NOT NULL,
 	NomeTitolare varchar(50) NOT NULL,
 	Indirizzo varchar(100) NOT NULL,
