@@ -1,3 +1,10 @@
+CREATE TABLE cliente (
+    CF varchar(16) PRIMARY KEY,
+    Nome varchar(50) NOT NULL,
+    Cognome varchar(50) NOT NULL,
+    Tipo varchar(50) NOT NULL
+);
+
 CREATE TABLE forma(
     CodForma int PRIMARY KEY,
     Stagionatura varchar(30) NOT NULL,
