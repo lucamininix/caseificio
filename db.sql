@@ -1,7 +1,9 @@
-CREATE TABLE RACCOLTA(
-    Data DATE,
+CREATE TABLE raccolta (
+    Data date,
     CodCaseificio int,
-    LatteRaccolto VARCHAR(55)NOT NULL,
-    LatteRaccolto VARCHAR(55)NOT NULL,
-    PRIMARY KEY(Data,CodCaseificio)
-)
+    LatteRaccolto varchar(55) NOT NULL,
+    LatteLavorato varchar(55) NOT NULL,
+    PRIMARY KEY (Data,CodCaseificio),
+    FOREIGN KEY CodCaseificio references Caseificio (CodCaseificio)
+
+);
