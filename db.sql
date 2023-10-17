@@ -1,3 +1,12 @@
+CREATE TABLE raccolta (
+    Data date,
+    CodCaseificio int,
+    LatteRaccolto varchar(55) NOT NULL,
+    LatteLavorato varchar(55) NOT NULL,
+    PRIMARY KEY (Data,CodCaseificio),
+    FOREIGN KEY (CodCaseificio) REFERENCES Caseificio (CodCaseificio)
+);
+
 CREATE TABLE cliente (
     CF varchar(16) PRIMARY KEY,
     Nome varchar(50) NOT NULL,
