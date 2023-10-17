@@ -1,3 +1,15 @@
+CREATE TABLE caseificio (
+    CodCaseificio int PRIMARY KEY,
+    Nome  varchar (50) NOT NULL,
+    NomeTitolare varchar(50) NOT NULL,
+    Indirizzo varchar(100) NOT NULL,
+    Citta varchar(50) NOT NULL,
+    CAP int NOT NULL,
+    Provincia varchar(50) NOT NULL,
+    Latitudine int NOT NULL,
+    Longitudine int NOT NULL
+);
+
 CREATE TABLE raccolta (
     Data date,
     CodCaseificio int,
@@ -26,19 +38,7 @@ CREATE TABLE forma (
     FOREIGN KEY (CF) REFERENCES cliente(CF)
 );
 
-CREATE TABLE caseificio (
-    CodCaseificio int PRIMARY KEY,
-    Nome  varchar (50) NOT NULL,
-    NomeTitolare varchar(50) NOT NULL,
-    Indirizzo varchar(100) NOT NULL,
-    Citta varchar(50) NOT NULL,
-    CAP int NOT NULL,
-    Provincia varchar(50) NOT NULL,
-    Latitudine int NOT NULL,
-    Longitudine int NOT NULL
-);
-
-CREATE TABLE Image(
+CREATE TABLE image(
     CodImmagine int PRIMARY KEY,
     Foto varchar(250),
     Didascalia varchar(100),
