@@ -37,3 +37,11 @@ CREATE TABLE caseificio (
     Latitudine int NOT NULL,
     Longitudine int NOT NULL
 );
+
+CREATE TABLE Image(
+    CodImmagine int PRIMARY KEY,
+    Foto varchar(250),
+    Didascalia varchar(100),
+    CodCaseificio int,
+    FOREIGN KEY (CodCaseificio) REFERENCES caseificio(CodCaseificio)
+);
