@@ -31,5 +31,8 @@ CREATE TABLE caseificio (
 
 CREATE TABLE Image(
     CodImmagine int PRIMARY KEY,
-    Foto 
-)
+    Foto varchar(250),
+    Didascalia varchar(100),
+    CodCaseificio int,
+    FOREIGN KEY (CodCaseificio) REFERENCES caseificio(CodCaseificio)
+);
