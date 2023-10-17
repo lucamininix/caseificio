@@ -1,5 +1,5 @@
 CREATE TABLE caseificio (
-    CodCaseificio int PRIMARY KEY,
+    CodCaseificio int AUTO_INCREMENT PRIMARY KEY,
     Nome  varchar (50) NOT NULL,
     NomeTitolare varchar(50) NOT NULL,
     Indirizzo varchar(100) NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE cliente (
 );
 
 CREATE TABLE forma (
-    CodForma int PRIMARY KEY,
+    CodForma int AUTO_INCREMENT PRIMARY KEY,
     Stagionatura varchar(30) NOT NULL,
     Scelta varchar(20) NOT NULL,
     Numero int NOT NULL,
@@ -39,7 +39,7 @@ CREATE TABLE forma (
 );
 
 CREATE TABLE image(
-    CodImmagine int PRIMARY KEY,
+    CodImmagine int AUTO_INCREMENT PRIMARY KEY,
     Foto varchar(250),
     Didascalia varchar(100),
     CodCaseificio int,
